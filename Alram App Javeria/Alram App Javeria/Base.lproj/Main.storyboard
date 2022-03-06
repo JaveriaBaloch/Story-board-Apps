@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LJS-H5-r41">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Set alarm-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Alram_App_Javeria" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="68" translatesAutoresizingMaskIntoConstraints="NO" id="IrH-OO-Weu">
+                                <rect key="frame" x="47" y="241" width="320" height="414.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Alarm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7I-Fe-jeq">
+                                        <rect key="frame" x="100.5" y="0.0" width="119" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <color key="textColor" red="0.41302737550000002" green="0.42677223139999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="IBR-7i-HkL">
+                                        <rect key="frame" x="0.0" y="99.5" width="320" height="216"/>
+                                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apn-lH-Rat">
+                                        <rect key="frame" x="104" y="383.5" width="112" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Set the Alarm">
+                                            <color key="baseBackgroundColor" red="0.41302737550000002" green="0.42677223139999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bfv-oM-nUs"/>
+                                            <segue destination="tCL-ag-ygE" kind="push" id="eu8-wc-j4y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IrH-OO-Weu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ia4-Qw-csU"/>
+                            <constraint firstItem="IrH-OO-Weu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="W0b-AM-6ik"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Set alarm" id="QZo-c4-KMq"/>
+                    <connections>
+                        <outlet property="dateInput" destination="IBR-7i-HkL" id="oRQ-ea-Ds6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="83.705357142857139"/>
+        </scene>
+        <!--Alarm View Controller-->
+        <scene sceneID="LnP-Xa-eZh">
+            <objects>
+                <viewController id="tCL-ag-ygE" customClass="AlarmViewController" customModule="Alram_App_Javeria" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TRH-do-vhr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm is set to:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcL-Xy-OZv">
+                                <rect key="frame" x="34" y="122" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="None" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUW-Ys-2jL">
+                                <rect key="frame" x="34" y="201" width="380" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TmG-MR-N8Q"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TmG-MR-N8Q" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JUW-Ys-2jL" secondAttribute="trailing" symbolic="YES" id="6lf-dG-nlP"/>
+                            <constraint firstItem="TmG-MR-N8Q" firstAttribute="trailing" secondItem="JUW-Ys-2jL" secondAttribute="trailing" id="E4r-n0-07B"/>
+                            <constraint firstItem="FcL-Xy-OZv" firstAttribute="top" secondItem="TmG-MR-N8Q" secondAttribute="top" constant="34" id="KEs-ME-Qd9"/>
+                            <constraint firstItem="JUW-Ys-2jL" firstAttribute="leading" secondItem="TmG-MR-N8Q" secondAttribute="leading" constant="34" id="Lv9-hO-INW"/>
+                            <constraint firstItem="JUW-Ys-2jL" firstAttribute="top" secondItem="FcL-Xy-OZv" secondAttribute="bottom" constant="58" id="Ohg-un-1rK"/>
+                            <constraint firstItem="FcL-Xy-OZv" firstAttribute="leading" secondItem="TmG-MR-N8Q" secondAttribute="leading" constant="34" id="bp7-JN-bOU"/>
+                            <constraint firstItem="TmG-MR-N8Q" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FcL-Xy-OZv" secondAttribute="trailing" symbolic="YES" id="c0Q-ef-gFI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DrJ-du-6MY"/>
+                    <connections>
+                        <outlet property="setTimeLabel" destination="JUW-Ys-2jL" id="wrA-Ab-P5Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqw-L0-lwW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639.1304347826087" y="83.705357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nbz-5A-Zub">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LJS-H5-r41" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XWe-eY-irn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="a8s-Tu-ywM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WD8-w2-YpG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

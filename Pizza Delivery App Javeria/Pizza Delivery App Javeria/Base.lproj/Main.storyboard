@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Pizza_Delivery_App_Javeria" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyT-uO-Mr0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5T-PL-rkW">
+                                        <rect key="frame" x="0.0" y="0.0" width="450" height="802"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="I3I-zA-ucz">
+                                                <rect key="frame" x="0.0" y="0.0" width="450" height="711"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EIP-14-R2V">
+                                                        <rect key="frame" x="0.0" y="0.0" width="450" height="150"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="italian-cuisine-ga589f9cd9_1920" translatesAutoresizingMaskIntoConstraints="NO" id="gcP-09-LdR">
+                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="150" id="Jq1-OO-e2P"/>
+                                                                    <constraint firstAttribute="width" constant="150" id="oDp-pL-oPM"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="YHN-z9-Q38">
+                                                                <rect key="frame" x="170" y="0.0" width="280" height="150"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chicken Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGE-18-PQv">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="51"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                        <color key="textColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 1.2 euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ems-nX-2wp">
+                                                                        <rect key="frame" x="0.0" y="51" width="280" height="39.5"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                        <color key="textColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaK-jC-1c0">
+                                                                        <rect key="frame" x="0.0" y="90.5" width="280" height="59.5"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="filled" title="Add">
+                                                                            <color key="baseBackgroundColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="ChickenPizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ALZ-F7-ftA"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="150" id="HpP-rx-d22"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="L6H-Ga-SZT">
+                                                        <rect key="frame" x="0.0" y="170" width="450" height="150"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza-g3be5e318d_1920" translatesAutoresizingMaskIntoConstraints="NO" id="Jk4-S4-NDX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="150" id="GcM-h7-kKW"/>
+                                                                    <constraint firstAttribute="width" constant="150" id="yN9-mz-ivR"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="JAx-mv-YiL">
+                                                                <rect key="frame" x="170" y="0.0" width="280" height="150"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Afghani Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBE-NL-hJO">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="51"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                        <color key="textColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 2.2 euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hv-Uh-2q8">
+                                                                        <rect key="frame" x="0.0" y="51" width="280" height="39.5"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                        <color key="textColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reA-vy-DOB">
+                                                                        <rect key="frame" x="0.0" y="90.5" width="280" height="59.5"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="filled" title="Add">
+                                                                            <color key="baseBackgroundColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="AfghaniPizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Czy-Mf-sLp"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="150" id="E8o-LN-fae"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iik-4T-r1h">
+                                                        <rect key="frame" x="0.0" y="340" width="450" height="150"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="the-pizza-gf2862964e_1920" translatesAutoresizingMaskIntoConstraints="NO" id="jEA-Wk-mBd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="150" id="Bu5-S2-42z"/>
+                                                                    <constraint firstAttribute="height" constant="150" id="NPh-fK-2vt"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="8vc-m6-0bU">
+                                                                <rect key="frame" x="170" y="0.0" width="280" height="150"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheese Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mq-2W-bdb">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="51"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                        <color key="textColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 1.5 euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAU-iN-itS">
+                                                                        <rect key="frame" x="0.0" y="51" width="280" height="39.5"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                        <color key="textColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJD-vl-O2j">
+                                                                        <rect key="frame" x="0.0" y="90.5" width="280" height="59.5"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="filled" title="Add">
+                                                                            <color key="baseBackgroundColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="CheesePizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0E0-Ru-sks"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="150" id="EQW-IM-3xn"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wa6-fc-o7C">
+                                                        <rect key="frame" x="0.0" y="510" width="450" height="150"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza-g48c2f0a4f_1920" translatesAutoresizingMaskIntoConstraints="NO" id="1C7-X8-QwG">
+                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="150" id="38h-Vn-NjY"/>
+                                                                    <constraint firstAttribute="width" constant="150" id="wyb-Ip-wgW"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="4qK-bZ-YRp">
+                                                                <rect key="frame" x="170" y="0.0" width="280" height="150"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegetable Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sM-xz-WQv">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="51"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                                        <color key="textColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 1.7 euro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMj-SX-zi0">
+                                                                        <rect key="frame" x="0.0" y="51" width="280" height="39.5"/>
+                                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                        <color key="textColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BsQ-Ru-QX3">
+                                                                        <rect key="frame" x="0.0" y="90.5" width="280" height="59.5"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="filled" title="Add">
+                                                                            <color key="baseBackgroundColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="VegetablePizza:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sZ1-4a-Uda"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="150" id="OzX-QF-ebO"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6q-Ea-Bx2" customClass="Ma">
+                                                        <rect key="frame" x="0.0" y="680" width="450" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Show Cart">
+                                                            <color key="baseBackgroundColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="FY5-Zk-HqS" kind="show" id="2zN-5l-BDs"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="EIP-14-R2V" firstAttribute="leading" secondItem="I3I-zA-ucz" secondAttribute="leading" id="FdF-jL-5Yp"/>
+                                                    <constraint firstAttribute="trailing" secondItem="EIP-14-R2V" secondAttribute="trailing" id="ezf-09-hlA"/>
+                                                    <constraint firstItem="EIP-14-R2V" firstAttribute="top" secondItem="I3I-zA-ucz" secondAttribute="top" id="pdI-38-fzY"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="450" id="rZA-L3-PPz"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="802" id="BNZ-Kw-KIm"/>
+                                            <constraint firstItem="I3I-zA-ucz" firstAttribute="top" secondItem="x5T-PL-rkW" secondAttribute="top" id="VBI-ko-ZmQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="I3I-zA-ucz" secondAttribute="trailing" id="d2w-o9-7fA"/>
+                                            <constraint firstItem="I3I-zA-ucz" firstAttribute="leading" secondItem="x5T-PL-rkW" secondAttribute="leading" id="sNv-7l-CBp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="x5T-PL-rkW" firstAttribute="leading" secondItem="yyT-uO-Mr0" secondAttribute="leading" id="7UG-t5-nbB"/>
+                                    <constraint firstAttribute="trailing" secondItem="x5T-PL-rkW" secondAttribute="trailing" id="BjW-Sz-CeD"/>
+                                    <constraint firstItem="x5T-PL-rkW" firstAttribute="leading" secondItem="yyT-uO-Mr0" secondAttribute="leading" id="RlM-sI-uDW"/>
+                                    <constraint firstAttribute="trailing" secondItem="x5T-PL-rkW" secondAttribute="trailing" id="T5g-LI-n78"/>
+                                    <constraint firstAttribute="bottom" secondItem="x5T-PL-rkW" secondAttribute="bottom" constant="16" id="c6K-WL-kBo"/>
+                                    <constraint firstItem="x5T-PL-rkW" firstAttribute="top" secondItem="yyT-uO-Mr0" secondAttribute="top" id="erz-TE-KpH"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="yyT-uO-Mr0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GSA-90-d0V"/>
+                            <constraint firstAttribute="trailing" secondItem="yyT-uO-Mr0" secondAttribute="trailing" id="MAi-yh-Z9a"/>
+                            <constraint firstItem="yyT-uO-Mr0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Qq2-Mj-urv"/>
+                            <constraint firstItem="yyT-uO-Mr0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="c0S-5N-EW5"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+        </scene>
+        <!--Check Out View Controller-->
+        <scene sceneID="MIl-JU-1U8">
+            <objects>
+                <viewController id="FY5-Zk-HqS" customClass="CheckOutViewController" customModule="Pizza_Delivery_App_Javeria" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yug-nZ-knJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PTd-8t-ifa">
+                                <rect key="frame" x="30" y="41" width="354" height="255.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Total Price: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pkk-4Q-fgK">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WF4-7O-TcN">
+                                        <rect key="frame" x="0.0" y="45" width="354" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K1e-mC-Aue">
+                                        <rect key="frame" x="0.0" y="94" width="354" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAK-OP-qJo">
+                                        <rect key="frame" x="0.0" y="143" width="354" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Checkout">
+                                            <color key="baseBackgroundColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="checkOutPressed:" destination="FY5-Zk-HqS" eventType="touchUpInside" id="un3-it-jTy"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xsK-HA-FSs">
+                                        <rect key="frame" x="0.0" y="189" width="354" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1y1-LC-NuU">
+                                        <rect key="frame" x="0.0" y="224.5" width="354" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Empty the Cart">
+                                            <color key="baseBackgroundColor" red="1" green="0.43395762780000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="emptyCart:" destination="FY5-Zk-HqS" eventType="touchUpInside" id="Wwu-cI-2eM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Pkk-4Q-fgK" secondAttribute="trailing" id="1ng-cq-S29"/>
+                                    <constraint firstItem="xsK-HA-FSs" firstAttribute="width" secondItem="WF4-7O-TcN" secondAttribute="width" id="Lrr-p7-XfU"/>
+                                    <constraint firstAttribute="trailing" secondItem="WF4-7O-TcN" secondAttribute="trailing" id="hi2-F4-ujz"/>
+                                    <constraint firstItem="1y1-LC-NuU" firstAttribute="width" secondItem="WF4-7O-TcN" secondAttribute="width" id="qSr-y4-80v"/>
+                                    <constraint firstAttribute="trailing" secondItem="KAK-OP-qJo" secondAttribute="trailing" id="vcW-wi-hPl"/>
+                                    <constraint firstItem="K1e-mC-Aue" firstAttribute="width" secondItem="WF4-7O-TcN" secondAttribute="width" id="wcp-fX-Pht"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="A6O-wx-ggJ"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="PTd-8t-ifa" firstAttribute="leading" secondItem="A6O-wx-ggJ" secondAttribute="leading" constant="30" id="CB9-LK-Dqv"/>
+                            <constraint firstItem="A6O-wx-ggJ" firstAttribute="trailing" secondItem="PTd-8t-ifa" secondAttribute="trailing" constant="30" id="Vmx-3N-9kV"/>
+                            <constraint firstItem="PTd-8t-ifa" firstAttribute="top" secondItem="A6O-wx-ggJ" secondAttribute="top" constant="41" id="lSi-sA-cFE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wCy-Ks-Fvm"/>
+                    <connections>
+                        <outlet property="addressInput" destination="WF4-7O-TcN" id="6w7-5x-dAF"/>
+                        <outlet property="phoneLabel" destination="wcp-fX-Pht" id="p8N-Uy-hGg"/>
+                        <outlet property="thankyouLabel" destination="xsK-HA-FSs" id="gVL-cU-0ZO"/>
+                        <outlet property="totalPriceLabel" destination="Pkk-4Q-fgK" id="M2H-uj-lg8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eHB-Kg-Wde" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="911.59420289855075" y="116.51785714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="italian-cuisine-ga589f9cd9_1920" width="1920" height="1281"/>
+        <image name="pizza-g3be5e318d_1920" width="1920" height="1280"/>
+        <image name="pizza-g48c2f0a4f_1920" width="1920" height="1280"/>
+        <image name="the-pizza-gf2862964e_1920" width="1920" height="1279"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
